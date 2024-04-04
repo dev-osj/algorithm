@@ -27,10 +27,10 @@ fun main() {
 
     var sum = 0
     var min = Int.MAX_VALUE
-    for (i in m .. n) {
-        if (primes[i]) {
-            sum += i
-            min = min.coerceAtMost(i)
+    for (j in m .. n) {
+        if (primes[j]) {
+            sum += j
+            min = min.coerceAtMost(j)
         }
     }
 

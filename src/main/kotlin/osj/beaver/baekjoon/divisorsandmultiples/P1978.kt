@@ -24,7 +24,7 @@ fun main() {
 
     var answer = 0
     stringTokenizer = StringTokenizer(readln())
-    for (i in 0 until n) {
+    repeat(n) {
         val number = stringTokenizer.nextToken().toInt()
         if (primes[number]) {
             answer++
