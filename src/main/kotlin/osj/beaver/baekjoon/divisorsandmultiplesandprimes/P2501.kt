@@ -1,4 +1,4 @@
-package osj.beaver.baekjoon.divisorsandmultiples
+package osj.beaver.baekjoon.divisorsandmultiplesandprimes
 
 import java.util.StringTokenizer
 import kotlin.math.sqrt
