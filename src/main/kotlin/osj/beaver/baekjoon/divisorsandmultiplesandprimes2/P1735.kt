@@ -16,7 +16,7 @@ fun main() {
 
     var son = a * d + b * c
     var mom = b * d
-    var gcd = 1
+    val gcd: Int
 
     var number: Int
     while(true) {
