@@ -24,7 +24,7 @@ fun main() {
 
 // 264ms 22832ms
 @Suppress("Unused")
-fun useStack() {
+fun p10773UseStack() {
     val reader = System.`in`.bufferedReader()
     val k = reader.readLine().toInt()
     val stack = Stack<Int>()
@@ -43,7 +43,7 @@ fun useStack() {
 
 // 292ms 32196kb
 @Suppress("Unused")
-fun useDeque() {
+fun p10773UseDeque() {
     val reader = System.`in`.bufferedReader()
     val k = reader.readLine().toInt()
     val deque = ArrayDeque<Int>()
