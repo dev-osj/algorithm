@@ -5,6 +5,7 @@ import java.io.InputStreamReader
 import java.util.Stack
 import java.util.StringTokenizer
 
+// 104ms 12580kb
 fun main() {
     val reader = BufferedReader(InputStreamReader(System.`in`))
     val n = reader.readLine().toInt()
