@@ -1,17 +1,10 @@
-package osj.beaver.baekjoon.combinatorics
-
 import java.io.BufferedReader
-import java.io.BufferedWriter
 import java.io.InputStreamReader
-import java.io.OutputStreamWriter
 
+// 92ms 12172kb
 fun main() {
     val n = BufferedReader(InputStreamReader(System.`in`)).readLine().toInt()
-    val writer = BufferedWriter(OutputStreamWriter(System.out))
-
-    writer.write("${n * (n - 1)}")
-    writer.flush()
-    writer.close()
+    println(n * (n - 1))
 }
 /*
 1. 0 = 1 x 0
