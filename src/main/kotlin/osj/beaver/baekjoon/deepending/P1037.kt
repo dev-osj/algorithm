@@ -5,6 +5,7 @@ import java.io.InputStreamReader
 import java.util.SortedSet
 import java.util.StringTokenizer
 
+// 116ms 18668kb
 fun main() {
     val reader = BufferedReader(InputStreamReader(System.`in`))
     val count = reader.readLine().toInt()
