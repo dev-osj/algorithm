@@ -1,4 +1,4 @@
-package osj.beaver.baekjoon.deepending
+package osj.beaver.baekjoon.deepending2
 
 import java.io.BufferedReader
 import java.io.InputStreamReader
