@@ -4,7 +4,8 @@ import java.io.BufferedReader
 import java.io.InputStreamReader
 import java.util.StringTokenizer
 
-// 580ms 313828kb
+
+// 132ms 20568kb
 fun main() {
     val reader = BufferedReader(InputStreamReader(System.`in`))
     val stringTokenizer = StringTokenizer(reader.readLine())
@@ -12,11 +13,11 @@ fun main() {
     val m = stringTokenizer.nextToken().toInt()
 
     val stringBuilder = StringBuilder()
-    p15651Dfs(IntArray(m), n, m, 0, stringBuilder)
+    p15652Dfs(IntArray(m), n, m, 0, 0, stringBuilder)
     println(stringBuilder)
 }
 
-fun p15651Dfs(array: IntArray, n: Int, m: Int, depth: Int, stringBuilder: StringBuilder) {
+fun p15652Dfs(array: IntArray, n: Int, m: Int, depth: Int, start: Int, stringBuilder: StringBuilder) {
     if (depth == m) {
         for (i in array.indices) {
             stringBuilder.append("${array[i]} ")
@@ -25,8 +26,8 @@ fun p15651Dfs(array: IntArray, n: Int, m: Int, depth: Int, stringBuilder: String
         return
     }
 
-    for (i in 0 until n) {
+    for (i in start until  n) {
         array[depth] = i + 1
-        p15651Dfs(array, n, m, depth + 1, stringBuilder)
+        p15652Dfs(array, n, m, depth + 1, i, stringBuilder)
     }
 }
