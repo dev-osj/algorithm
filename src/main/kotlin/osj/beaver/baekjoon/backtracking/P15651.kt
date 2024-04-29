@@ -4,6 +4,7 @@ import java.io.BufferedReader
 import java.io.InputStreamReader
 import java.util.StringTokenizer
 
+// 580ms 313828kb
 fun main() {
     val reader = BufferedReader(InputStreamReader(System.`in`))
     val stringTokenizer = StringTokenizer(reader.readLine())
@@ -12,7 +13,7 @@ fun main() {
 
     val stringBuilder = StringBuilder()
     p15651Dfs(IntArray(m), n, m, 0, stringBuilder)
-    println(stringBuilder )
+    println(stringBuilder)
 }
 
 fun p15651Dfs(array: IntArray, n: Int, m: Int, depth: Int, stringBuilder: StringBuilder) {
